@@ -12,7 +12,7 @@ Compilation of all known methods to run Dark and Darker on Linux, listed roughly
 Simply run this installer https://lutris.net/games/dark-and-darker/ using Lutris. I do not keep this script up-to-date, but it works at time of writing.
 
 # Dark and Darker flatpak (prereqs: flatpak)
-I created and maintain a flatpak repo here https://github.com/nmlynch94/com.darkanddarker.DaD along with a one-liner to install it. It will create an application shortcut on your desktop. Follow the instructions in the README.
+I created and maintain a flatpak repo here https://github.com/nmlynch94/com.darkanddarker.DaD along with a one-liner to install it. It will create an application shortcut in your desktop environment. Follow the instructions in the README.
 
 # Steam Proton (prereqs: protontricks, steam)
 1. Download the [Blacksmith Installer](https://www.darkanddarker.com/)
@@ -34,6 +34,9 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 4. Use winetricks to install wininet and urlmon to the prefix
 9. Perform the voip fix DLL override in the final section using winecfg.
 10. Run BlacksmithBootstrap.exe inside your prefix.
+
+# Steam Deck
+All of the steps shown above will work as written on a steam deck. The only note is that it currently does not work in Gaming Mode, so, you will need to play in Desktop Mode.
 
 # VOIP Fix
 To fix the blacksmith installer, we had to install wininet and urlmon. This fixes the installer, which is great, but it breaks VOIP. This means, Blacksmith.exe needs the native urlmon and wininet, while DungeonCrawler.exe needs the builtin urlmon and wininet. Luckily, wine provides the ability to override per-executable using application profiles.
