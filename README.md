@@ -14,18 +14,19 @@ Simply run this installer https://lutris.net/games/dark-and-darker/ using Lutris
 # Dark and Darker flatpak (prereqs: flatpak)
 I created and maintain a flatpak repo here https://github.com/nmlynch94/com.darkanddarker.DaD along with a one-liner to install it. It will create an application shortcut in your desktop environment. Follow the instructions in the README.
 
-# Steam Proton (prereqs: protontricks, steam)
+# Steam Proton (prereqs: protontricks, steam, protonrup-qt)
 1. Download the [Blacksmith Installer](https://www.darkanddarker.com/)
-2. In Steam, choose Games -> Add Non-Steam Game to My Library
-3. Choose Browse, and select the blacksmith installer.exe
-4. Right Click -> properties and add double quotes around the "target" path
-5. Under Compatibility, choose Proton Experimental
-6. Launch and install blacksmith. Close the sign-in window before logging in.
-7. Run protontricks and choose the prefix for you shortcut
-8. Install wininet and urlmon. This may take awhile and, if you run protontricks outside the cli, it will appear to be doing nothing for awhile.
-9. Perform the voip fix DLL override in the final section using protontricks to access winecfg.
-10. Change the target to BlacksmithBootstrap.exe inside your steam prefix at "<prefix>"/drive_c/Program Files/IRONMACE/Blacksmith/". Add double quotes around the target path again.
-11. Launch!
+2. Install the latest proton-ge from protonup-qt and reboot steam.
+3. In Steam, choose Games -> Add Non-Steam Game to My Library
+4. Choose Browse, and select the blacksmith installer.exe
+5. Right Click -> properties and add double quotes around the "target" path
+6. Under Compatibility, choose Proton GE
+7. Launch and install blacksmith. Close the sign-in window before logging in.
+8. Run protontricks and choose the prefix for you shortcut
+9. Install wininet, vcrun2022, and urlmon. This may take awhile and, if you run protontricks outside the cli, it will appear to be doing nothing for awhile.
+10. Perform the voip fix DLL override in the final section using protontricks to access winecfg.
+11. Change the target to BlacksmithBootstrap.exe inside your steam prefix at "<prefix>"/drive_c/Program Files/IRONMACE/Blacksmith/". Add double quotes around the target path again.
+12. Launch!
 
 # Wine (prereqs: wine-ge, winetricks)
 1. Download the latest wine-ge
