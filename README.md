@@ -24,6 +24,8 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 7. Run protontricks and choose the prefix for you shortcut
 8. Install wininet and urlmon. This may take awhile and, if you run protontricks outside the cli, it will appear to be doing nothing for awhile.
 9. Perform the voip fix DLL override in the final section using protontricks to access winecfg.
+10. Change the target to BlacksmithBootstrap.exe inside your steam prefix at "<prefix>"/drive_c/Program Files/IRONMACE/Blacksmith/". Add double quotes around the target path again.
+11. Launch!
 
 # Wine (prereqs: wine-ge, winetricks)
 1. Download the latest wine-ge
@@ -31,6 +33,7 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 3. Run blacksmith installer with wine. Close the window before signing in.
 4. Use winetricks to install wininet and urlmon to the prefix
 9. Perform the voip fix DLL override in the final section using winecfg.
+10. Run BlacksmithBootstrap.exe inside your prefix.
 
 # VOIP Fix
 1. open winecfg for your prefix using winetricks or protontricks
