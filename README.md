@@ -36,6 +36,8 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 10. Run BlacksmithBootstrap.exe inside your prefix.
 
 # VOIP Fix
+To fix the blacksmith installer, we had to install wininet and urlmon. This fixes the installer, which is great, but it breaks VOIP. This means, Blacksmith.exe needs the native urlmon and wininet, while DungeonCrawler.exe needs the builtin urlmon and wininet. Luckily, wine provides the ability to override per-executable using application profiles.
+
 1. open winecfg for your prefix using winetricks or protontricks
 2. on Applications, click "Add Application"
 3. Navigate to Program Files/IRONMACE/Dark and Darker and choose DungeonCrawler.exe
