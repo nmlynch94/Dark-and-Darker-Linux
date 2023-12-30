@@ -12,7 +12,7 @@ Compilation of all known methods to run Dark and Darker on Linux, listed roughly
 Simply run this installer https://lutris.net/games/dark-and-darker/ using Lutris. I do not keep this script up-to-date, but it works at time of writing.
 
 # Dark and Darker flatpak (prereqs: flatpak)
-I created a flatpak repo here https://github.com/nmlynch94/com.darkanddarker.DaD along with a one-liner to install it. It will create an application shortcut on your desktop. Follow the instructions in the README.
+I created and maintain a flatpak repo here https://github.com/nmlynch94/com.darkanddarker.DaD along with a one-liner to install it. It will create an application shortcut on your desktop. Follow the instructions in the README.
 
 # Steam Proton (prereqs: protontricks, steam)
 1. Download the [Blacksmith Installer](https://www.darkanddarker.com/)
