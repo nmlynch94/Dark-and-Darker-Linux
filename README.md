@@ -40,7 +40,7 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 All of the steps shown above will work as written on a steam deck. The only note is that it currently does not work in Gaming Mode, so, you will need to play in Desktop Mode.
 
 # VOIP Fix
-To fix the blacksmith installer, we had to install wininet and urlmon. This fixes the installer, which is great, but it breaks VOIP. This means, Blacksmith.exe needs the native urlmon and wininet, while DungeonCrawler.exe needs the builtin urlmon and wininet. Luckily, wine provides the ability to override per-executable using application profiles.
+To make the blacksmith launcher function properly, we had to install wininet and urlmon. This fixes the launcher, which is great, but it breaks VOIP in game. This means, Blacksmith.exe needs the native urlmon and wininet, while DungeonCrawler.exe needs the builtin urlmon and wininet. Luckily, wine provides the ability to override per-executable using application profiles.
 
 1. open winecfg for your prefix using winetricks or protontricks
 2. on Applications, click "Add Application"
