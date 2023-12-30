@@ -1,3 +1,6 @@
+# Disclaimer
+I am in no way affiliated with IRONMACE and running the launcher through linux is unsupported by them as they clearly state in their faq on their website. Use at your own risk.
+
 # Dark-and-Darker-Linux
 Compilation of all known methods to run Dark and Darker on Linux, listed roughly from easiest to hardest. Accordingly, I will go into less detail on the less user-friendly methods since those will primarily be reserved for those who understand wine/linux well and want to avoid things like Steam, Lutris, and Flatpak.
 
