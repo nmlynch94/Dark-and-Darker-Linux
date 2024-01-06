@@ -4,7 +4,7 @@ I am in no way affiliated with IRONMACE and running the launcher through linux i
 # Dark-and-Darker-Linux
 Compilation of all known methods to run Dark and Darker on Linux, listed roughly from easiest to hardest. Accordingly, I will go into less detail on the less user-friendly methods since those will primarily be reserved for those who understand wine/linux well and want to avoid things like Steam, Lutris, and Flatpak.
 
-Discord started by Tepri is the best place to get support if you need it: https://discord.gg/ggu2yMSVjt
+Discord started by Tepri is the best place to get support if you need it: https://discord.gg/ggu2yMSVjt. This repo is based on the work done by everyone there, just putting it in a more visible location.
 
 # Known issues (These will apply to all methods)
 1. Launcher will not remember sign-in credentials. You have to enter them each time.
