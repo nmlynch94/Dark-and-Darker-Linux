@@ -42,7 +42,7 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 10. Run BlacksmithBootstrap.exe inside your prefix.
 
 # Steam Deck
-All of the steps shown above will work as written on a steam deck. The only note is that it currently does not work in Gaming Mode, so, you will need to play in Desktop Mode.
+All of the steps shown above will work as written on a steam deck. The flatpak version is probably the fewest steps to get up and running. The only note is that it currently does not work in Gaming Mode, so, you will need to play in Desktop Mode.
 
 # VOIP Fix
 To make the blacksmith launcher function properly, we had to install wininet and urlmon. This fixes the launcher, which is great, but it breaks VOIP in game. This means, Blacksmith.exe needs the native urlmon and wininet, while DungeonCrawler.exe needs the builtin urlmon and wininet. Luckily, wine provides the ability to override per-executable using application profiles.
