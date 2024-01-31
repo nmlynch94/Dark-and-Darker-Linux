@@ -1,6 +1,8 @@
 # Disclaimer
 I am in no way affiliated with IRONMACE and running the launcher through linux is unsupported by them as they clearly state in their faq on their website. Use at your own risk.
 
+These instructions are a result of all of all the work from Tepri's Discord https://discord.gg/ggu2yMSVjt. This is the best place for questions/support if you need it.
+
 # Dark-and-Darker-Linux
 Compilation of all known methods to run Dark and Darker on Linux, listed roughly from easiest to hardest. Accordingly, I will go into less detail on the less user-friendly methods since those will primarily be reserved for those who understand wine/linux well and want to avoid things like Steam, Lutris, and Flatpak.
 
@@ -43,6 +45,22 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 
 # Steam Deck
 All of the steps shown above will work as written on a steam deck. The flatpak version is probably the fewest steps to get up and running. The only note is that it currently does not work in Gaming Mode, so, you will need to play in Desktop Mode.
+
+# Apple Silicon Macs
+1. brew install --cask whisky (1.2.0 as of writing this)
+2. open -a /Applications/Whisky.app
+3. Make a new Bottle eg ‘Dark and Darker’
+4. Click 'Winetricks..' button and input wininet urlmon vcrun2019
+5. Check that Windows 10 / 18362 are still listed in Config, if not, Open Wine Configuration and change from XP to Windows
+6. Enable the 'ESYNC' toggle in Config (leave DXVK off, we use GPTK for dx12) (you can mess with vsync later in AppData GameUserSettings.ini)
+7. Download latest 'Blacksmith Installer.exe' from darkanddarker.com, and copy it to the Bottle’s drive_c
+8. Click 'Run..' and run 'Blacksmith Installer.exe'
+9. Login should work because of vcrun2019, then click Install, which should work because of wininet urlmon
+10. In the top-left of the launcher, click Game → Launch Options → -dx12 and then click 'X' to close
+11. Click Play, wait a while on black screen (compiling shaders?)
+12. In-game, change settings to Medium and FXAA, then Quit
+13. Perform VOIP fix
+14. Click Play
 
 # VOIP Fix
 To make the blacksmith launcher function properly, we had to install wininet and urlmon. This fixes the launcher, which is great, but it breaks VOIP in game. This means, Blacksmith.exe needs the native urlmon and wininet, while DungeonCrawler.exe needs the builtin urlmon and wininet. Luckily, wine provides the ability to override per-executable using application profiles.
