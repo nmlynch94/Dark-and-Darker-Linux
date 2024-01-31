@@ -46,7 +46,7 @@ I created and maintain a flatpak repo here https://github.com/nmlynch94/com.dark
 # Steam Deck
 All of the steps shown above will work as written on a steam deck. The flatpak version is probably the fewest steps to get up and running. The only note is that it currently does not work in Gaming Mode, so, you will need to play in Desktop Mode.
 
-# Apple Silicon Macs
+# Apple Silicon Macs (NOTE: at time of writing, this is broken due to a Rosetta 2 bug. Upgrading to the 14.4 developer preview build is required to make this work)
 1. brew install --cask whisky (1.2.0 as of writing this)
 2. open -a /Applications/Whisky.app
 3. Make a new Bottle eg ‘Dark and Darker’
