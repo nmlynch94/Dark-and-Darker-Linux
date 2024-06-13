@@ -8,12 +8,16 @@ Compilation of all known methods to run Dark and Darker on Linux, listed roughly
 
 Discord started by Tepri is the best place to get support if you need it: https://discord.gg/ggu2yMSVjt. This repo is based on the work done by everyone there, just putting it in a more visible location.
 
-# Known issues (These will apply to all methods)
+# Known issues (These will apply to all methods besides steam)
 1. Launcher will not remember sign-in credentials. You have to enter them each time.
 2. Launcher does not close propertly using the x button or closing from the task bar (this happens sometimes in windows as well). You will need to stop from lutris/steam or use `flatpak kill com.darkanddarker.DaD` to make sure it's closed.
 3. Installer progress bar overlays all text on top of itself, looking like a jumbled mess. It is still working even though it looks wrong.
 4. Mouse will leave your in-game window periodically if the blacksmith launcher is behind it. Simply move or minimize blacksmith after launch to prevent this.
 5. Sometimes on launch of Dark and Darker nothing is clickable. Alt-tab to fix this.
+
+# Steam (prereqs: steam) - steam release is the preferred method now that it has been added back to steam. Will leave the below methods for historical purposes.
+1. Download Dark and Darker on steam
+2. Launch
 
 # Lutris (prereqs: Lutris)
 Simply run this installer https://lutris.net/games/dark-and-darker/ using Lutris. I do not keep this script up-to-date, but it works at time of writing.
