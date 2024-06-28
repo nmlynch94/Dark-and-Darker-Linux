@@ -17,7 +17,9 @@ Discord started by Tepri is the best place to get support if you need it: https:
 
 # Steam (prereqs: steam) - steam release is the preferred method now that it has been added back to steam. Will leave the below methods for historical purposes.
 1. Download Dark and Darker on steam
-2. Launch
+2. Right click -> properties
+3. Set launch arguments to STEAMDECK=1 %command%
+4. Launch
 
 # Lutris (prereqs: Lutris)
 Simply run this installer https://lutris.net/games/dark-and-darker/ using Lutris. I do not keep this script up-to-date, but it works at time of writing.
